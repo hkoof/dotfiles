@@ -1,0 +1,16 @@
+:colorscheme zazen
+
+
+light with colors:
+let g:zenesque_colors=1
+
+dark without colors:
+let g:zenesque_colors=2
+
+dark with colors:
+let g:zenesque_colors=3
+
+if you want to revert back to the default then set: g:zenesque_colors=0
+ 
+
+

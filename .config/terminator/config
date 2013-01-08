@@ -1,5 +1,9 @@
 [global_config]
-  enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  # enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#839496"
+  title_inactive_fg_color = "#93a1a1"
+  title_transmit_fg_color = "#eee8d5"
+  title_inactive_bg_color = "#586e75"
   title_hide_sizetext = True
   dbus = True
   handle_size = 2

@@ -25,8 +25,9 @@ syntax on
 " highlight Comment ctermfg=LightCyan
 
 " set default color scheme
+set t_Co=256
+colorscheme solarized
 if has("gui_running")
-    colorscheme solarized
     set background=light
 else
     set background=dark

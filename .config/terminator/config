@@ -8,69 +8,90 @@
   close_term = <Shift><Alt>w
 [profiles]
   [[solarized-dark]]
+    scrollbar_position = hidden
     palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    visible_bell = True
     audible_bell = True
     use_system_font = False
     cursor_color = "#667788"
     foreground_color = "#657b83"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    font = GohuFont 10
     background_color = "#002b36"
-  [[ranje]]
-    palette = "#111111:#ff9756:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    font = Source Code Pro Semi-Bold 10
-    use_system_font = False
-    show_titlebar = False
-    foreground_color = "#ff9753"
   [[solarized-light]]
+    scrollbar_position = hidden
     palette = "#eee8d5:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#073642:#fdf6e3:#cb4b16:#93a1a1:#839496:#657b83:#6c71c4:#586e75:#002b36"
+    visible_bell = True
     audible_bell = True
     use_system_font = False
     cursor_color = "#889999"
     foreground_color = "#839496"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    font = GohuFont 11
     background_color = "#fdf6e3"
+  [[ranje]]
+    scrollbar_position = hidden
+    palette = "#111111:#ff9756:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    visible_bell = True
+    audible_bell = True
+    use_system_font = False
+    foreground_color = "#ff9753"
+    show_titlebar = False
+    font = GohuFont 10
   [[default]]
+    scrollbar_position = hidden
     palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    visible_bell = True
     audible_bell = True
     use_system_font = False
     cursor_color = "#667788"
     foreground_color = "#657b83"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    antialias = False
+    font = GohuFont 10
     background_color = "#002b36"
-  [[Blauwig]]
-    use_system_font = False
-    font = Source Code Pro Semi-Bold 10
-    background_color = "#2c465d"
-    show_titlebar = False
-    foreground_color = "#cccccc"
   [[Groenig]]
     use_system_font = False
+    visible_bell = True
+    audible_bell = True
     scrollbar_position = hidden
     foreground_color = "#dddddd"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    font = GohuFont 10
     background_color = "#29503b"
+  [[Blauwig]]
+    use_system_font = False
+    visible_bell = True
+    audible_bell = True
+    scrollbar_position = hidden
+    foreground_color = "#cccccc"
+    show_titlebar = False
+    font = GohuFont 10
+    background_color = "#2c465d"
   [[Rodig]]
     use_system_font = False
     visible_bell = True
+    audible_bell = True
+    scrollbar_position = hidden
     cursor_color = "#dddddd"
     foreground_color = "#dcdcdc"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    font = GohuFont 10
     background_color = "#7f2229"
-    cursor_blink = False
   [[Gelig]]
+    scrollbar_position = hidden
+    audible_bell = True
+    font = GohuFont 10
     use_system_font = False
-    font = Source Code Pro Semi-Bold 10
+    visible_bell = True
   [[grijzig]]
     use_system_font = False
+    visible_bell = True
+    audible_bell = True
     scrollbar_position = hidden
     foreground_color = "#000000"
     show_titlebar = False
-    font = Source Code Pro Semi-Bold 10
+    font = GohuFont 10
     background_color = "#ffffdd"
 [layouts]
   [[default]]

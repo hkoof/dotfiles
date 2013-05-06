@@ -1,0 +1,12 @@
+#[user]
+#	name = Heiko Noordhof
+#	email = h.e.noordhof@rug.nl
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+[alias]
+    lol = log --oneline --graph --decorate=short --relative-date
+

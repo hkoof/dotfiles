@@ -1,1 +1,2 @@
-/usr/share/vim/addons/ftdetect/puppet.vim
+" detect puppet filetype
+au BufRead,BufNewFile *.pp              set filetype=puppet

@@ -9,4 +9,5 @@
 	ui = true
 [alias]
     lol = log --oneline --graph --decorate=short --relative-date
+    lot = log --graph --pretty='format:%h %d'
 

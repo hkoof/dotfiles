@@ -6,8 +6,8 @@ for FG in $COLORS ; do
         git log -1 --pretty="format:%C($FG)normal-$FG%Creset"
         git log -1 --pretty="%C(bold $FG)bold $FG%Creset"
         git log -1 --pretty="%C(dim $FG)dim $FG%Creset"
-        git log -1 --pretty="%C(ul $FG)ul $FG%Creset"
         git log -1 --pretty="%C(reverse $FG)reverse $FG%Creset"
+        git log -1 --pretty="%C(ul $FG)ul $FG%Creset"
         echo 
 done
 

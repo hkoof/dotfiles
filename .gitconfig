@@ -1,6 +1,6 @@
-#[user]
-#	name = Heiko Noordhof
-#	email = h.e.noordhof@rug.nl
+[user]
+	name = Heiko
+	email = 
 [core]
 	editor = vim
 [merge]
@@ -9,5 +9,6 @@
 	ui = true
 [alias]
     lol = log --oneline --graph --decorate=short --relative-date
-    lot = log --graph --pretty='format:%h %d'
+    flog = log --graph --pretty='format:%C(yellow)%h%Creset%C(bold red)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
+    wlog = log --graph --pretty='format:%C(yellow)%h%Creset%C(bold red)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,8)%s'
 

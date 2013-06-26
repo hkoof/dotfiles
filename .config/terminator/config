@@ -1,16 +1,40 @@
 [global_config]
+<<<<<<< HEAD
+<<<<<<< HEAD
   enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   title_hide_sizetext = True
   dbus = True
   handle_size = 2
+=======
+  title_hide_sizetext = True
+  handle_size = 1
+>>>>>>> 0923974... Rebuild terminator config
   tab_position = bottom
+=======
+>>>>>>> e68e91b... Start rebuilding profiles in terminator because of freezes :-/
 [keybindings]
-  close_term = <Shift><Alt>w
 [profiles]
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    visible_bell = True
+    use_system_font = False
+    cursor_color = "#667788"
+    foreground_color = "#657b83"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 10
+    background_color = "#002b36"
+>>>>>>> 0923974... Rebuild terminator config
   [[solarized-dark]]
     scrollbar_position = hidden
     palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     visible_bell = True
+<<<<<<< HEAD
     audible_bell = True
     use_system_font = False
     cursor_color = "#667788"
@@ -38,11 +62,32 @@
     foreground_color = "#ff9753"
     show_titlebar = False
     font = GohuFont 10
+=======
+>>>>>>> e68e91b... Start rebuilding profiles in terminator because of freezes :-/
   [[default]]
+    foreground_color = "#e53c00"
+  [[solarized-dark]]
+    palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+<<<<<<< HEAD
+    visible_bell = True
+    audible_bell = True
+=======
+=======
+>>>>>>> e68e91b... Start rebuilding profiles in terminator because of freezes :-/
+    use_system_font = False
+    cursor_color = "#667788"
+    foreground_color = "#657b83"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 8
+    background_color = "#002b36"
+<<<<<<< HEAD
+  [[solarized-dark-tiny]]
     scrollbar_position = hidden
     palette = "#073642:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     visible_bell = True
-    audible_bell = True
+>>>>>>> 0923974... Rebuild terminator config
     use_system_font = False
     cursor_color = "#667788"
     foreground_color = "#657b83"
@@ -50,6 +95,7 @@
     antialias = False
     font = GohuFont 10
     background_color = "#002b36"
+<<<<<<< HEAD
   [[Groenig]]
     use_system_font = False
     visible_bell = True
@@ -93,12 +139,63 @@
     show_titlebar = False
     font = GohuFont 10
     background_color = "#ffffdd"
+=======
+  [[solarized-light-tiny]]
+    scrollbar_position = hidden
+    palette = "#eee8d5:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#073642:#fdf6e3:#cb4b16:#93a1a1:#839496:#657b83:#6c71c4:#586e75:#002b36"
+    visible_bell = True
+    use_system_font = False
+    cursor_color = "#889999"
+    foreground_color = "#839496"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 8
+    background_color = "#fdf6e3"
+  [[solarized-light]]
+    scrollbar_position = hidden
+    palette = "#eee8d5:#d30102:#859900:#b58900:#268bd2:#d33682:#2aa198:#073642:#fdf6e3:#cb4b16:#93a1a1:#839496:#657b83:#6c71c4:#586e75:#002b36"
+    visible_bell = True
+    use_system_font = False
+    cursor_color = "#889999"
+    foreground_color = "#839496"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 10
+    background_color = "#fdf6e3"
+  [[ranje]]
+    scrollbar_position = hidden
+    palette = "#111111:#ff9756:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    visible_bell = True
+    use_system_font = False
+    cursor_color = "#ff9753"
+    foreground_color = "#ff9753"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 10
+    background_color = "#111111"
+  [[ranje-tiny]]
+    scrollbar_position = hidden
+    palette = "#111111:#ff9756:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    visible_bell = True
+    use_system_font = False
+    cursor_color = "#ff9753"
+    foreground_color = "#ff9753"
+    icon_bell = False
+    show_titlebar = False
+    antialias = False
+    font = GohuFont 8
+    background_color = "#111111"
+>>>>>>> 0923974... Rebuild terminator config
+=======
+>>>>>>> e68e91b... Start rebuilding profiles in terminator because of freezes :-/
 [layouts]
   [[default]]
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = solarized-dark
     [[[window0]]]
       type = Window
       parent = ""

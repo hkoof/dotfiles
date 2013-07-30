@@ -4,11 +4,11 @@
 	tool = vimdiff
 [color]
 	ui = true
+[alias]
+    lol  = log --oneline --graph --decorate=short --relative-date
+    funky = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
+    wfunky = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,8)%s'
 [push]
 	default = simple
 [credential]
 	helper = cache
-[alias]
-    lol  = log --oneline --graph --decorate=short --relative-date
-    funky = log --graph --pretty='format:%C(yellow)%h%Creset%C(bold red)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
-    wfunky = log --graph --pretty='format:%C(yellow)%h%Creset%C(bold red)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,8)%s'

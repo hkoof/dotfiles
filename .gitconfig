@@ -1,6 +1,9 @@
 [user]
 	name = Heiko Noordhof
 	email = h.e.noordhof@rug.nl
+[user]
+	name = Heiko Noordhof
+	email = h.e.noordhof@rug.nl
 [core]
 	editor = vim
 [merge]
@@ -9,7 +12,7 @@
 	ui = true
 [alias]
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
-    wl = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,8)%s'
+    wl = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset\n\t%C(blue)%cr%Creset %C(dim green)%cn%Creset\n\t%w(80,0,8)%s'
     all = log --all --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
 #### option too new vfor many git clients
 # [push]

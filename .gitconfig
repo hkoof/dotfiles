@@ -11,6 +11,7 @@
 [color]
 	ui = true
 [alias]
+    l = log -n10 --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
     wl = log --graph --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset%C(white)%d%Creset\n\t%w(80,0,4)%s'
     all = log --all --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'

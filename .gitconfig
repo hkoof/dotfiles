@@ -18,7 +18,7 @@
 [color]
 	ui = true
 [alias]
-    l = log -n10 --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
+    l = !git --no-pager log -n10 --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(0)%s'
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
     wl = log --graph --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset%C(white)%d%Creset\n    %w(80,0,4)%s'
     all = log --all --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'

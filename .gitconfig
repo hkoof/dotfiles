@@ -5,11 +5,24 @@
 [color]
 	ui = true
 [alias]
+    # log-aliases:
+    #   l   = Log:      short decorated graphic, that is last 10 lines without pager
+    #   ll  = Long Log: long decorated graphic Log.
+    #   wl  = Wide Log: multiple lines per commit. Line-wrapped commit description.
+    #   ls  = List Log: Decorated Log without branching graphics.
+    #   br  = BRanches: only last commit of each branch
+    #   wbr  =  Wide BRanch log: only last commit of each branch, more info, more lines
+    #   npy = No Pushed Yet: show local commits of al branches which are not on the tracked (remote) branches.
+    l = !git --no-pager log -n10 --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %w(0)%s'
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
-    wl = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,8)%s'
-    all = log --all --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
+    wl = log --graph --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset%C(white)%d%Creset\n    %w(80,0,4)%s'
+    ls = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
+    br = log --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %si'
+    wbr = log --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %si\n'
+    npy = log --branches --not --remotes --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
 #### option too new vfor many git clients
 # [push]
 #	default = simple
 [credential]
 	helper = cache
+

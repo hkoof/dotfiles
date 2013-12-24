@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [merge]
 	tool = vimdiff
 [color]
@@ -21,8 +22,8 @@
     wbr = log --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %si\n'
     npy = log --branches --not --remotes --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
 #### option too new vfor many git clients
-# [push]
-#	default = simple
+[push]
+	default = simple
 [credential]
 	helper = cache
 

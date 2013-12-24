@@ -4,6 +4,7 @@ SRCS="
   .Xresources
   .screenrc
   .config
+  .gitignore
   .emacs
   .vimrc
   .vimbackup

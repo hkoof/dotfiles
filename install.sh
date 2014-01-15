@@ -1,7 +1,6 @@
 #!/bin/sh
 
 SRCS="
-  .Xresources
   .screenrc
   .config
   .gitignore

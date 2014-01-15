@@ -11,9 +11,9 @@
     #   ll  = Long Log:           long decorated graphic Log.
     #   wl  = Wide Log:           multiple lines per commit. Line-wrapped commit description.
     #   lt  = List Terse:         only hash, description and ref-names (i.e. decorated). No branch graphs.
-    #   ls  = List Log:           decorated Log without branching graphs.
+    #   ls  = LiSt log:           decorated Log without branching graphs.
     #   br  = BRanches:           only last commit of each branch
-    #   wls = Wide Log:           multiple lines per commit. Line-wrapped commit description. No branch graphs.
+    #   wls = Wide LiSt:          multiple lines per commit. Line-wrapped commit description. No branch graphs.
     #   lbo = List Branch Only:   like "lt", but skip commits merged from other branches
     #   wbr = Wide BRanch log:    only last commit of each branch, more info, more lines
     #   npy = No Pushed Yet:      show local commits of all branches which are not on the tracked (remote) branches.

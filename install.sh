@@ -8,6 +8,7 @@ SRCS="
   .vimrc
   .vimbackup
   .vim
+  .profile
   bin
 "
 

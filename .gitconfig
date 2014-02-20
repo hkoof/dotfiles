@@ -27,7 +27,7 @@
     br = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
     wls = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,4)%s'
     lbo = log --first-parent --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
-    wbr = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %si\n'
+    wbr = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %s\n'
     npy = log --branches --not --remotes --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
 #### option too new vfor many git clients
 # [push]

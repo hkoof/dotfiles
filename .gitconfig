@@ -24,7 +24,7 @@
     wl = log --graph --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset%C(white)%d%Creset\n    %w(80,0,4)%s'
     lt = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
     ls = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
-    br = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %si'
+    br = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
     wls = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %w(80,0,4)%s'
     lbo = log --first-parent --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
     wbr = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %si\n'

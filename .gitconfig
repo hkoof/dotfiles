@@ -1,3 +1,6 @@
+[user]
+	name = Heiko Noordhof
+	email = h.e.noordhof@rug.nl
 [core]
 	editor = vim
 [merge]
@@ -21,7 +24,7 @@
     l = log --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset\t%s' -n 10
     fh = log --pretty='format:%C(yellow)%H%Creset %s'
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
-    wl = log --graph --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset%C(white)%d%Creset\n        %w(80,0,4)%s\n'
+    wl = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset\n%C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %w(80,0,4)%s\n'
     lt = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
     ls = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
     br = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %s'
@@ -30,8 +33,8 @@
     wbr = log --all --branches --simplify-by-decoration --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset\n    %s\n'
     npy = log --branches --not --remotes --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
 #### option too new vfor many git clients
-# [push]
-#	default = simple
+[push]
+	default = upstream
 [credential]
 	helper = cache
 

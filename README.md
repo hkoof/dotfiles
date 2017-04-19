@@ -1,5 +1,5 @@
 dotfiles
 ========
 
-Some home-dir config dot files
+Some home-dir config `dot` files
 

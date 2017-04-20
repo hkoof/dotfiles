@@ -55,9 +55,13 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 "class, if, etc) the next line will automatically indent itself to the next
 "level of indentation:
 "
-autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class 
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 " Another approach is to create a key mapping which detects when you type a
 " colon (:) followed by a RETURN (<CR>), and adds a <TAB> keypress to the end.
 "" im :<CR> :<CR><TAB>
 
+" View man pages in vim:
+"   :Man 3 printf
+"
+runtime! ftplugin/man.vim

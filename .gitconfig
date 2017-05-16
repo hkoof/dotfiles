@@ -1,8 +1,12 @@
+[user]
+	name = Heiko Noordhof
+	email = h.e.noordhof@rug.nl
 [core]
 	editor = vim
+	pager = "less -FXSR#4"
 [merge]
 	tool = vimdiff
-    conflictstyle = diff3
+	conflictstyle = diff3
 [color]
 	ui = true
 [alias]
@@ -41,4 +45,3 @@
 	default = upstream
 [credential]
 	helper = cache
-

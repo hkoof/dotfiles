@@ -5,6 +5,9 @@
 " set backup, if not, specify [ set nobackup ]
 set backup
 
+" to make copy paste possible we need this from vim version 8 on
+set mouse=
+
 " specify backup directory
 set backupdir=~/.vimbackup
 
@@ -64,4 +67,6 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 " View man pages in vim:
 "   :Man 3 printf
 "
-runtime! ftplugin/man.vim
+runtime ftplugin/man.vim
+
+au BufNewFile,BufRead *.rest set filetype=rst

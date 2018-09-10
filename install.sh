@@ -5,6 +5,7 @@ SRCS="
   .config
   .gitignore
   .emacs
+  .tmux.conf
   .vimrc
   .vimbackup
   .vim

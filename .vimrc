@@ -43,11 +43,12 @@ set nowrap
 "
 " set tab and indent spaces
 " DEPRECATED set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set autoindent
+" set tabstop=4
+" set shiftwidth=4
+" set softtabstop=4
+" set expandtab
+" set autoindent
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Remove trailing whitespace from python files just before saving (writing)
 " the file.
@@ -70,3 +71,6 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 runtime ftplugin/man.vim
 
 au BufNewFile,BufRead *.rest set filetype=rst
+iab hkodt <c-r>=strftime("%y-%m-%d %H:%M")<cr>
+iab hkodate <c-r>=strftime("%y-%m-%d")<cr>
+iab hkotime <c-r>=strftime("%H:%M")<cr>

@@ -24,6 +24,9 @@ filetype plugin indent on
 " show color display, if not, specify [ syntax off ]
 syntax on
 
+" internal header file (*.ih) to be treated as c++
+au BufRead,BufNewFile *.ih set filetype=cpp
+
 " change colors for comments if it's set [ syntax on ]
 " highlight Comment ctermfg=LightCyan
 

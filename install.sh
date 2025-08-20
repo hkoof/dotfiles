@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 SRCS="
-  .screenrc
   .config
   .gitignore
-  .emacs
   .tmux.conf
   .vimrc
   .vimbackup
@@ -32,3 +30,21 @@ GIT_PS1_SHOWUPSTREAM="git"
 EOF
 fi
 
+# neovim
+#
+nvim_dir=$HOME/nvim-linux-x86_64
+if ! [[ -d $nvim_dir ]] ; then
+    cd /tmp
+    rm nvim-linux-x86_64.tar.gz
+    wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+    tar xzCf $HOME /tmp/nvim-linux-x86_64.tar.gz
+fi
+
+echo 'alias nvim=${nvim_dir}/bin/nvim' >> ~/.bash_aliases
+
+if ! [[ -d .config/nvim ]] ; then
+    cd
+    mkdir -p .config
+    cd .config
+    git clone https://github.com/hkoof/nvim.hko.git nvim
+fi

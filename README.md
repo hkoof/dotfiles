@@ -1,5 +1,4 @@
 dotfiles
 ========
 
-Some home-dir config `dot` files
-
+My basic home dir customisation.

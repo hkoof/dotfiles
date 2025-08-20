@@ -40,8 +40,8 @@ if ! type nvim >/dev/null 2>&1 | grep -Eq "/local/|$HOME" && ! [[ -d $nvim_dir ]
     tar xzCf $HOME /tmp/nvim-linux-x86_64.tar.gz
 fi
 
-if ! type nvim >/dev/null >/dev/null 2>&1 | grep -E "/local/|$HOME" && ! grep -q '^ *alias *= *nvim' ~/.bash_aliases ; then
-    echo 'alias nvim=${nvim_dir}/bin/nvim' >> ~/.bash_aliases
+if ! type nvim >/dev/null 2>&1 | grep -E "/local/|$HOME" && ! grep -q '^ *alias *= *nvim' ~/.bash_aliases ; then
+    echo "alias nvim=${nvim_dir}/bin/nvim" >> ~/.bash_aliases
 fi
 
 if ! [[ -d ~/.config/nvim ]] ; then

@@ -42,7 +42,7 @@ fi
 
 echo 'alias nvim=${nvim_dir}/bin/nvim' >> ~/.bash_aliases
 
-if ! [[ -d .config/nvim ]] ; then
+if ! [[ -d ~/.config/nvim ]] ; then
     cd
     mkdir -p .config
     cd .config

@@ -33,14 +33,14 @@ fi
 # neovim
 #
 nvim_dir=$HOME/nvim-linux-x86_64
-if ! type nvim | grep -Eq "/local/|$HOME" && ! [[ -d $nvim_dir ]] ; then
+if ! type nvim >/dev/null 2>&1 | grep -Eq "/local/|$HOME" && ! [[ -d $nvim_dir ]] ; then
     cd /tmp
     rm nvim-linux-x86_64.tar.gz
     wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
     tar xzCf $HOME /tmp/nvim-linux-x86_64.tar.gz
 fi
 
-if type nvim | grep -E "/local/|$HOME" && ! grep -q '^ *alias *= *nvim' ~/.bash_aliases ; then
+if ! type nvim >/dev/null >/dev/null 2>&1 | grep -E "/local/|$HOME" && ! grep -q '^ *alias *= *nvim' ~/.bash_aliases ; then
     echo 'alias nvim=${nvim_dir}/bin/nvim' >> ~/.bash_aliases
 fi
 

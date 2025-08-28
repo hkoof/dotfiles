@@ -1,6 +1,9 @@
 [user]
 	name = Heiko Noordhof
 	email = h.e.noordhof@rug.nl
+[user]
+	name = Heiko Noordhof
+	email = h.e.noordhof@rug.nl
 [core]
 	editor = vim
 	pager = "less -FXSR#4"
@@ -24,6 +27,7 @@
     #   npy = No Pushed Yet:      show local commits of all branches which are not on the tracked (remote) branches.
     #
     l = log --pretty='format:%C(yellow)%h%Creset %C(blue)%cr%Creset\t%s' -n 10
+    lf = log --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s' --name-only
     fh = log --pretty='format:%C(yellow)%H%Creset %s'
     ll = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset %C(blue)%cr%Creset %C(dim green)%cn%Creset %s'
     wl = log --graph --pretty='format:%C(yellow)%h%Creset%C(white)%d%Creset\n\

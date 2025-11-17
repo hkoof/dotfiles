@@ -1,11 +1,8 @@
 [user]
 	name = Heiko Noordhof
 	email = h.e.noordhof@rug.nl
-[user]
-	name = Heiko Noordhof
-	email = h.e.noordhof@rug.nl
 [core]
-	editor = vim
+	editor = nvim
 	pager = "less -FXSR#4"
 [merge]
 	tool = vimdiff
@@ -52,3 +49,5 @@
 	helper = cache
 [rerere]
 	enabled = false
+[init]
+	defaultBranch = main

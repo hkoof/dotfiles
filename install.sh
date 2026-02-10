@@ -46,10 +46,10 @@ if ! type nvim >/dev/null 2>&1 && ! type nvim >/dev/null 2>&1 | grep -Eq "/local
     rm nvim-linux-x86_64.tar.gz
     curl -L -o /tmp/nvim-linux-x86_64.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
     tar xzCf $HOME /tmp/nvim-linux-x86_64.tar.gz
+    if ! grep -q '^ *alias *= *nvim' ~/.bash_aliases >/dev/null 2>&1 ; then
+        echo "alias nvim=${nvim_dir}/bin/nvim" >> ~/.bash_aliases
 fi
 
-if ! type nvim >/dev/null 2>&1 | grep -E "/local/|$HOME" && ! grep -q '^ *alias *= *nvim' ~/.bash_aliases >/dev/null 2>&1 ; then
-    echo "alias nvim=${nvim_dir}/bin/nvim" >> ~/.bash_aliases
 fi
 
 if ! [[ -d ~/.config/nvim ]] ; then

@@ -41,15 +41,20 @@ fi
 # neovim
 #
 nvim_dir=$HOME/nvim-linux-x86_64
-if ! type nvim >/dev/null 2>&1 && ! type nvim >/dev/null 2>&1 | grep -Eq "/local/|$HOME" && ! [[ -d $nvim_dir ]] ; then
+unset install_nvim
+[[ $1 == update-nvim ]] && install_nvim=1
+type nvim >/dev/null 2>&1 | grep -Eq "/local/|$HOME" || install_nvim=2
+[[ -d $nvim_dir ]] || install_nvim=3
+
+# if  ! type nvim >/dev/null 2>&1 && ! type nvim >/dev/null 2>&1 | grep -Eq "/local/|$HOME" && ! [[ -d $nvim_dir ]] ; then
+if [[ $install_nvim ]] ; then
     cd /tmp
-    rm nvim-linux-x86_64.tar.gz
+    rm nvim-linux-x86_64.tar.gz ||:
     curl -L -o /tmp/nvim-linux-x86_64.tar.gz https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
     tar xzCf $HOME /tmp/nvim-linux-x86_64.tar.gz
     if ! grep -q '^ *alias *= *nvim' ~/.bash_aliases >/dev/null 2>&1 ; then
         echo "alias nvim=${nvim_dir}/bin/nvim" >> ~/.bash_aliases
-fi
-
+    fi
 fi
 
 if ! [[ -d ~/.config/nvim ]] ; then
